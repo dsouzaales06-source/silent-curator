@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Silent Curator | Shopping Collection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#303221",
+                    "surface-variant": "#343535",
+                    "secondary-container": "#494a38",
+                    "surface-container-high": "#292a2a",
+                    "on-tertiary": "#082b72",
+                    "on-primary-fixed-variant": "#574500",
+                    "on-primary-fixed": "#241a00",
+                    "surface-tint": "#e9c349",
+                    "primary": "#f2ca50",
+                    "tertiary-container": "#97b0ff",
+                    "on-secondary-container": "#b9baa3",
+                    "surface-container": "#1f2020",
+                    "error-container": "#93000a",
+                    "outline-variant": "#4d4635",
+                    "primary-fixed": "#ffe088",
+                    "secondary": "#c8c8b0",
+                    "error": "#ffb4ab",
+                    "on-surface": "#e3e2e2",
+                    "on-tertiary-fixed-variant": "#27438a",
+                    "on-error-container": "#ffdad6",
+                    "on-surface-variant": "#d0c5af",
+                    "surface": "#121414",
+                    "inverse-on-surface": "#2f3031",
+                    "secondary-fixed": "#e4e4cc",
+                    "on-error": "#690005",
+                    "inverse-primary": "#735c00",
+                    "background": "#121414",
+                    "tertiary-fixed-dim": "#b4c5ff",
+                    "tertiary-fixed": "#dbe1ff",
+                    "surface-dim": "#121414",
+                    "on-primary": "#3c2f00",
+                    "surface-container-highest": "#343535",
+                    "surface-container-low": "#1b1c1c",
+                    "primary-container": "#d4af37",
+                    "on-background": "#e3e2e2",
+                    "on-tertiary-container": "#254188",
+                    "on-primary-container": "#554300",
+                    "tertiary": "#bfcdff",
+                    "primary-fixed-dim": "#e9c349",
+                    "secondary-fixed-dim": "#c8c8b0",
+                    "surface-bright": "#383939",
+                    "on-tertiary-fixed": "#00174b",
+                    "on-secondary-fixed-variant": "#474836",
+                    "inverse-surface": "#e3e2e2",
+                    "outline": "#99907c",
+                    "surface-container-lowest": "#0d0e0f",
+                    "on-secondary-fixed": "#1b1d0e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1440px",
+                    "gutter": "32px",
+                    "element-gap": "24px",
+                    "section-padding": "120px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Noto Serif"],
+                    "body-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "headline-lg": ["Noto Serif"],
+                    "label-caps": ["Manrope"],
+                    "display-xl": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "300"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.2em", "fontWeight": "600"}],
+                    "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #121414; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            backdrop-filter: blur(40px);
+            background: rgba(18, 20, 20, 0.85);
+        }
+        .halo-hover:hover {
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface bg-background antialiased overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto left-1/2 -translate-x-1/2 bg-black/40 backdrop-blur-2xl border-b border-white/10">
+<div class="text-2xl font-serif uppercase tracking-[0.2em] text-amber-500">
+            The Silent Curator
+        </div>
+<div class="hidden md:flex gap-12 font-serif tracking-wide items-center">
+<a class="text-amber-500 border-b border-amber-500 pb-1" href="collection.html">Collection</a>
+<a class="text-white/60 hover:text-white transition-colors duration-500" href="journal.html">Journal</a>
+<a class="text-white/60 hover:text-white transition-colors duration-500" href="artist.html">Artists</a>
+<a class="text-white/60 hover:text-white transition-colors duration-500" href="exhibitions.html">Exhibitions</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-amber-500 hover:bg-amber-500/5 transition-all duration-300 p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Background (The Collection Page) -->
+<main class="pt-[140px] px-12 pb-20 max-w-[1440px] mx-auto min-h-screen">
+<header class="mb-20">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-4 block">Archive 01</span>
+<h1 class="font-display-xl text-display-xl max-w-4xl">Timeless Artisanal Fragments</h1>
+</header>
+<!-- Bento Grid Collection -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Large Feature Item -->
+<div class="col-span-12 md:col-span-8 group">
+<div class="relative overflow-hidden aspect-[16/9] border border-white/10 halo-hover transition-all duration-700">
+<img alt="Artisanal Ceramics" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-105 transition-transform duration-1000" data-alt="Close-up of a minimalist hand-thrown ceramic vase with organic textures on a dark stone surface with soft side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU0uaYrzMIHLCnTGo42DS7IMS90H-CouYQQ1EQMyFcFNTYrhq65YpmAG3UhNz4o1tWjWwupvwANcUwqmtbPUE6aTTj_mKA6dE7Yg-I3RFu7CE1cp4nc9JiRCkkqJ1kcprqjozoS8tEUKeQbCd2qkMqGp8iv7QEpslOAz8MgUCGctbn_Hbi1hZ-7Ck55C6b1a7GjVmUQKqoghU5glUEx_RPSORT3lrOFZUzrnl95ikYERB3U5vyYY_yEnkDNOJnup_A-F4ogzSLFlc"/>
+<div class="absolute bottom-0 left-0 p-12 bg-gradient-to-t from-black/80 to-transparent w-full">
+<h3 class="font-headline-md text-headline-md">Obsidian Vessel No. 04</h3>
+<p class="font-body-lg text-body-lg text-white/60">Hand-carved basalt stone</p>
+</div>
+</div>
+</div>
+<!-- Side Item -->
+<div class="col-span-12 md:col-span-4 flex flex-col gap-8">
+<div class="border border-white/10 p-8 glass-panel h-full flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-primary mb-4 block">The Process</span>
+<p class="font-body-lg text-body-lg leading-relaxed text-on-surface-variant">
+                        Every piece in this collection is curated for its silent strength and material honesty. We value the mark of the hand over the perfection of the machine.
+                    </p>
+</div>
+</div>
+<!-- Small Grid Items -->
+<div class="col-span-12 md:col-span-4 group cursor-pointer" onclick="window.location.href='product.html'">
+<div class="border border-white/10 halo-hover transition-all duration-500">
+<img alt="Textile art" class="w-full aspect-square object-cover" data-alt="Detailed texture of a hand-woven linen textile with raw edges in neutral tones, dramatic lighting highlighting the weave" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYj95eH1rMuwq7kkzRBQnbmtwwC6OUsrvbD-bb5HWXcKKrlF_XAu-ACd1ak3Nmm-KFOxdZpWeW1_OMFNIZBiwwK8w9RsVHOyrECG9uVzwkhLT352q0uq_6BYObKiAIry_zqcvY9BrCpT4KTez_wNY_a7gsyBvbN_e8AC605gH--kUBxP-a7YQcir6Mz6KB9qSgZv0hlNgHPQUUWa5_-pN9jtKcmMi739CzcDodQMbU_NEFDo3D7tmyzRirrmXGVMXbXrFqN7PHhuk"/>
+<div class="p-8">
+<span class="font-label-caps text-label-caps text-white/40 block mb-2">Textile</span>
+<h4 class="font-headline-md text-[24px]">Raw Linen Weave</h4>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 group cursor-pointer" onclick="window.location.href='product.html'">
+<div class="border border-white/10 halo-hover transition-all duration-500">
+<img alt="Wood craft" class="w-full aspect-square object-cover" data-alt="Minimalist wooden sculpture with smooth curves made of dark walnut, set against a charcoal grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIZf-EWvWu9y-ZLTu3qXOJvNZZi0PwiNOvwmXDEBKvOhiP680Jy1DJgPQ2p0z9fNghri-h9xsR3PoMpR3cRmc0D2cD5-tziikjNvJh5jH4q7S6YxHQk1Vu78YiJ3agNyRF8-EtSY3bkWAo8W2wBZV8ImmbgzPUMdeCWX1WHJ0PA9i_X3N7xOOuKug49s-ejZVTG7PUXJVvCpRWTSK7Vl46wtI2SPGQA7TI9eH2J3LUNc9K0D5wpEhfA9GN5zGIZZGyyhattGjH6tc"/>
+<div class="p-8">
+<span class="font-label-caps text-label-caps text-white/40 block mb-2">Wood</span>
+<h4 class="font-headline-md text-[24px]">Walnut Fragment</h4>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 group cursor-pointer" onclick="window.location.href='product.html'">
+<div class="border border-white/10 halo-hover transition-all duration-500">
+<img alt="Glass art" class="w-full aspect-square object-cover" data-alt="Hand-blown glass bowl with smoke-like swirls of grey and amber" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhBzqkoX2iYqRqiK3MDt81AeSf--KvwTZCLutR8cf8szykUyPeODkwRj_tSxBrbsklO3RsautLBICcHgBU0VlSrV2vMAQedwB7aZtHpPEwnuLeQckhcHTJc2k0G2iZANyNmJ7kT-GX8WSt0pcrC2F3GcKmXkanle3aE_nPR9bQj7Z3eZ9geZAoVfJyhVGda1ltsddHX1z6xtXRO5FNWYfslectUu-k0leiFfIA5_VqwxbJjvD57ww4Mwj6eBBd-Z05FLQGasMVvpE" />
+<div class="p-8">
+<span class="font-label-caps text-label-caps text-white/40 block mb-2">Glassware</span>
+<h4 class="font-headline-md text-[24px]">Smoke &amp; Swirl Bowl</h4>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Section -->
+<footer class="w-full py-20 px-12 grid grid-cols-12 gap-8 max-w-[1440px] mx-auto bg-black border-t border-white/5">
+<div class="col-span-12 md:col-span-4">
+<div class="text-xl font-serif text-amber-500 mb-4">The Silent Curator</div>
+<p class="font-serif text-sm tracking-widest text-white/40 max-w-xs">
+        Elevating the artisan, honoring the craft. A gallery dedicated to the permanence of hand-made excellence.
+      </p>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-primary mb-6">EXPLORE</h4>
+<ul class="space-y-4">
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="collection.html">Collection</a></li>
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="journal.html">Journal</a></li>
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="artist.html">Artists</a></li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-primary mb-6">CONNECT</h4>
+<ul class="space-y-4">
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Inquiry</a></li>
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Newsletter</a></li>
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Press</a></li>
+</ul>
+</div>
+<div class="col-span-12 md:col-span-4">
+<h4 class="font-label-caps text-label-caps text-primary mb-6">NEWSLETTER</h4>
+<div class="relative border-b border-white/20 pb-2 flex items-center">
+<input class="bg-transparent border-none focus:ring-0 w-full text-white placeholder-white/20 font-serif text-sm" placeholder="Your email address" type="email"/>
+<button class="text-primary hover:translate-x-2 transition-transform">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="col-span-12 mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-serif text-sm tracking-widest text-white/40">© 2024 The Silent Curator. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;1,400&amp;family=Manrope:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#303221",
+                        "surface-variant": "#343535",
+                        "secondary-container": "#494a38",
+                        "surface-container-high": "#292a2a",
+                        "on-tertiary": "#082b72",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-primary-fixed": "#241a00",
+                        "surface-tint": "#e9c349",
+                        "primary": "#f2ca50",
+                        "tertiary-container": "#97b0ff",
+                        "on-secondary-container": "#b9baa3",
+                        "surface-container": "#1f2020",
+                        "error-container": "#93000a",
+                        "outline-variant": "#4d4635",
+                        "primary-fixed": "#ffe088",
+                        "secondary": "#c8c8b0",
+                        "error": "#ffb4ab",
+                        "on-surface": "#e3e2e2",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "on-error-container": "#ffdad6",
+                        "on-surface-variant": "#d0c5af",
+                        "surface": "#121414",
+                        "inverse-on-surface": "#2f3031",
+                        "secondary-fixed": "#e4e4cc",
+                        "on-error": "#690005",
+                        "inverse-primary": "#735c00",
+                        "background": "#121414",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "tertiary-fixed": "#dbe1ff",
+                        "surface-dim": "#121414",
+                        "on-primary": "#3c2f00",
+                        "surface-container-highest": "#343535",
+                        "surface-container-low": "#1b1c1c",
+                        "primary-container": "#d4af37",
+                        "on-background": "#e3e2e2",
+                        "on-tertiary-container": "#254188",
+                        "on-primary-container": "#554300",
+                        "tertiary": "#bfcdff",
+                        "primary-fixed-dim": "#e9c349",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "surface-bright": "#383939",
+                        "on-tertiary-fixed": "#00174b",
+                        "on-secondary-fixed-variant": "#474836",
+                        "inverse-surface": "#e3e2e2",
+                        "outline": "#99907c",
+                        "surface-container-lowest": "#0d0e0f",
+                        "on-secondary-fixed": "#1b1d0e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1440px",
+                        "gutter": "32px",
+                        "element-gap": "24px",
+                        "section-padding": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Serif", "serif"],
+                        "body-lg": ["Manrope", "sans-serif"],
+                        "body-md": ["Manrope", "sans-serif"],
+                        "headline-lg": ["Noto Serif", "serif"],
+                        "label-caps": ["Manrope", "sans-serif"],
+                        "display-xl": ["Noto Serif", "serif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "300"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.2em", "fontWeight": "600"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(18, 20, 20, 0.7);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 max-w-[1440px] left-1/2 -translate-x-1/2 bg-black/40 backdrop-blur-2xl border-b border-white/10">
+<div class="text-2xl font-serif uppercase tracking-[0.2em] text-amber-500 font-headline-lg">
+            The Silent Curator
+        </div>
+<div class="hidden md:flex gap-12 font-serif tracking-wide">
+<a class="text-white/60 hover:text-white transition-colors duration-500 font-body-md" href="collection.html">Collection</a>
+<a class="text-white/60 hover:text-white transition-colors duration-500 font-body-md" href="journal.html">Journal</a>
+<a class="text-white/60 hover:text-white transition-colors duration-500 font-body-md" href="artist.html">Artists</a>
+<a class="text-amber-500 border-b border-amber-500 pb-1 font-body-md" href="exhibitions.html">Exhibitions</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-white/60 hover:text-amber-500 transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-[160px] pb-section-padding">
+<!-- Hero Header -->
+<header class="px-12 mb-section-padding text-center">
+<span class="font-label-caps text-primary uppercase block mb-4">Curated Experiences</span>
+<h1 class="font-display-xl text-on-surface mb-6">Exhibitions</h1>
+<p class="font-body-lg text-secondary max-w-2xl mx-auto">A sanctuary for the ephemeral. Explore our current residency of artisanal mastery and upcoming dialogues between craft and observer.</p>
+</header>
+<!-- Current Exhibition (Featured) -->
+<section class="px-12 mb-section-padding">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 font-label-caps text-secondary mb-8 border-b border-white/5 pb-4">Current Exhibition</div>
+<div class="col-span-12 lg:col-span-8 relative group cursor-pointer overflow-hidden rounded-lg">
+<img alt="Current Exhibition" class="w-full aspect-[16/9] object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Minimalist gallery interior with a single large ceramic sculpture on a central plinth, soft spotlights, and deep charcoal shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfOUS8LUOFqCpsQZiUOKgYIK84C6CsABesCvLWaJ4cc_B7caNF3Rk2TkeSRdqerTazRmsnHdNyvVO6vA0Zzb1tF-H5YkWhWzsuP4WIfDCgUtg1kgwmz5w4ZyTo6WyNCr3AA2dluL34Zd8dCRh1i5_m1KVF4--aL3DfG-PV5Q8OEMlhwcd0ggOrkx9XaceqIKbR-jIa1HZjOcZ92EWLaZLllTyjq_2JkIZTvJ6AhmVcsU51iP0xVWTo9tYwtIgBp288F8017P5DR9w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-12">
+<span class="font-label-caps text-primary mb-2">Nov 15 — Jan 12</span>
+<h2 class="font-headline-lg text-white mb-4">The Resonance of Clay</h2>
+<p class="font-body-md text-white/80 max-w-lg mb-6">An immersive study of tactile geometry and primitive firing techniques featuring work by Master Ceramist Kaito Sato.</p>
+<button class="w-fit border border-primary text-primary px-8 py-3 font-label-caps transition-all duration-300 hover:bg-primary/10 hover:shadow-[0_0_40px_rgba(212,175,55,0.1)]">Book a Visit</button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 flex flex-col justify-between bg-surface-container p-12 border border-white/5 rounded-lg">
+<div>
+<h3 class="font-headline-md text-on-surface mb-6 italic">Curatorial Note</h3>
+<p class="font-body-md text-secondary mb-8 italic">"In this series, silence is not the absence of sound, but the presence of focus. The vessel becomes a mirror to the void."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="font-label-caps text-on-surface-variant">Elena Vance, Head Curator</span>
+</div>
+</div>
+<div class="pt-12">
+<h4 class="font-label-caps text-primary mb-4">Live Demonstrations</h4>
+<ul class="space-y-4">
+<li class="flex justify-between border-b border-white/5 pb-2">
+<span class="font-body-md text-on-surface">The Slow Turn</span>
+<span class="font-label-caps text-secondary">Dec 05</span>
+</li>
+<li class="flex justify-between border-b border-white/5 pb-2">
+<span class="font-body-md text-on-surface">Firing Shadows</span>
+<span class="font-label-caps text-secondary">Dec 12</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Upcoming Exhibitions (Bento Grid) -->
+<section class="px-12 mb-section-padding">
+<div class="font-label-caps text-secondary mb-8 border-b border-white/5 pb-4">Coming Seasons</div>
+<div class="grid grid-cols-12 gap-gutter">
+<!-- Upcoming 1 -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/5] rounded-lg mb-6 border border-white/10 group-hover:border-primary/30 transition-all duration-500">
+<img alt="Upcoming Exhibition 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of hand-woven textiles with intricate patterns of indigo and cream, soft natural sunlight casting long shadows across the fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUHMD04qtue7lC8rqyuFlCpVtsjuaAKSzaX-9P3vEO3_HuwC-BE4hFEzMgw98M1JSbYTfdbWWt9JoK-fnDoHiJH9e26GK4RYrR7AkKMC320Z3mtjVqE_f3o_ZrYpVfnyV8jhkV9lnhhbmRKn2DnTQ1TOomM2t87ZkeBJW4D4U70kfugWlX3SZ-YZZ-D4N9QBRNYxdz9LHPCT2pykvMdWFs5ttd2O1AFR7aMRlvtdkYzALmb9lDvXaDHdhNaCLbAAGINNdIdhaFhhA"/>
+<div class="absolute top-6 left-6 bg-black/60 backdrop-blur-md px-4 py-2 border border-white/10">
+<span class="font-label-caps text-white">Feb 2025</span>
+</div>
+</div>
+<h3 class="font-headline-md text-on-surface mb-2">Indigo Echoes</h3>
+<p class="font-body-md text-secondary">Traditional Shibori techniques redefined for the modern architectural space.</p>
+</div>
+<!-- Upcoming 2 -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 group cursor-pointer mt-12 md:mt-0">
+<div class="relative overflow-hidden aspect-[4/5] rounded-lg mb-6 border border-white/10 group-hover:border-primary/30 transition-all duration-500">
+<img alt="Upcoming Exhibition 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Japanese joinery detail in light oak wood, seamless connections without nails, studio lighting with high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIKUg2KQaTVGTYPqvhuWeYEM46AzdrW9SVjgrL1keKJEgebpcZpj0_Ipq2Qhufg1iRs8knEbn8Uiw9t8aiZG6t9W6c4NlrpH0z4S9eNJzsAgi3thmMdoQbNMLxdIsU3OcgcGNYalxfWXdBICRHj9Wfclw6Kn_F-27MdJpbFpLRh6mLlfKGw4bwFL8eBqSU8mmJilW7NagBvnD1KYtb2cDRC_M59R6YTTWsilIlMwx2JdmmvAKJw-eIpw2wj5aiuLQTW_54HM0jUZs"/>
+<div class="absolute top-6 left-6 bg-black/60 backdrop-blur-md px-4 py-2 border border-white/10">
+<span class="font-label-caps text-white">Mar 2025</span>
+</div>
+</div>
+<h3 class="font-headline-md text-on-surface mb-2">Structure &amp; Spirit</h3>
+<p class="font-body-md text-secondary">Exploring the mathematical precision of hand-jointed cabinetry from the Nordic tradition.</p>
+</div>
+<!-- Upcoming 3 -->
+<div class="col-span-12 md:col-span-12 lg:col-span-4 group cursor-pointer mt-12 lg:mt-0">
+<div class="relative overflow-hidden aspect-[4/5] rounded-lg mb-6 border border-white/10 group-hover:border-primary/30 transition-all duration-500">
+<img alt="Upcoming Exhibition 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Hand-hammered silver bowls resting on a black silk surface, shimmering reflections of warm light on metallic texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvCSMzD0PVlizwZYnP61F1xsWpKMwmvyfJl86K-5PN8_9zQTQzhDqD5limYyhut7ZVR6iesRZHfxWesAGRMqxZiaYKP-kQyhz0RoS8EpL6bsD3TVB4NVswFLfixGmXPwgmEvDjNMbNykPdvIZwk7F0rEzayN-yfcHKz5ErddA18vp6508I8P4qxd_q8C6YcLnlJ7r1ofA0cmHTsgK-VOS79YVUPQwUTILhRFqiX-hLRA1qjcVaOTZ4EA1DRfS6q3XQ46NKgCmeA_k"/>
+<div class="absolute top-6 left-6 bg-black/60 backdrop-blur-md px-4 py-2 border border-white/10">
+<span class="font-label-caps text-white">Apr 2025</span>
+</div>
+</div>
+<h3 class="font-headline-md text-on-surface mb-2">Liquid Metal</h3>
+<p class="font-body-md text-secondary">Contemporary silversmithing that challenges the rigidity of precious metals.</p>
+</div>
+</div>
+</section>
+<!-- Archives Section -->
+<section class="px-12">
+<div class="font-label-caps text-secondary mb-12 border-b border-white/5 pb-4">Exhibition Archive</div>
+<div class="grid grid-cols-12 gap-x-gutter gap-y-16">
+<!-- Archive Item 1 -->
+<div class="col-span-12 flex flex-col md:flex-row gap-12 group">
+<div class="w-full md:w-1/3 aspect-video overflow-hidden rounded border border-white/5">
+<img alt="Archive 2024" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Dark moody gallery space with hanging paper lanterns and shadows, artistic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDycnUujuDOtikY0kFPriBDonpsvjiynAOr_apszjZBc045MLr_BSyAEre8aztJRUoFXnuJdSKfskyXK6uDht6x3twA0ItqP1h75-3ijpd5MXrIF5aMLUR7_bpcXW4hQO3srxrj--NIntK3vcWzf1aLCqDRCw8OhS4wBIaEVnR80dGPoQ_2NIQSNbvxygLBFPjNCoJ-chMciaugYLPn4FMdBV64SZosbjQpEctaz973KKE55ZXeh4sXkJTL7iMy3xf7hDTKI21KlMU"/>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<span class="font-label-caps text-secondary mb-2">Autumn 2024</span>
+<h4 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">Weightless Objects</h4>
+<p class="font-body-md text-secondary max-w-xl">A retrospective on papercraft and its evolution from functional artifact to architectural installation.</p>
+</div>
+<div class="flex items-center">
+<a class="font-label-caps text-white/40 hover:text-primary flex items-center gap-2 group/link" href="#">
+                            View Catalog 
+                            <span class="material-symbols-outlined text-[16px] group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Archive Item 2 -->
+<div class="col-span-12 flex flex-col md:flex-row gap-12 group border-t border-white/5 pt-16">
+<div class="w-full md:w-1/3 aspect-video overflow-hidden rounded border border-white/5">
+<img alt="Archive 2023" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Abstract oil paintings on canvas in a modern gallery, wide white walls and minimalist layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTiNuWdVzl5ccoq8zBDXb1_01waIUDy5vXen1hDijT9FdhZ4XPNndpL3z2NR_M6fIOFdLg7h2cCzD2v4IIbqHabqy5XClM6DOFNW_rqlZmJEMR_xpDT-1_2NGq2NQj_ut0kOj7aOBlvw5XJE0Eq7sepOR4VzSRaZrUwhYhHfskYX18xsWzvXmzyTyi__Hb2SuYew_NcDIn4CPFXhf7_HqWUrQyP6BRyNRjzoxg7TNZn1RsF6ZhuZ1h2NnGTtv56rmVDfgxrDQgIXI"/>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<span class="font-label-caps text-secondary mb-2">Summer 2024</span>
+<h4 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">Vivid Silence</h4>
+<p class="font-body-md text-secondary max-w-xl">Contemporary glassblowing exploring the intersection of light, heat, and transparency.</p>
+</div>
+<div class="flex items-center">
+<a class="font-label-caps text-white/40 hover:text-primary flex items-center gap-2 group/link" href="#">
+                            View Catalog 
+                            <span class="material-symbols-outlined text-[16px] group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Archive Item 3 -->
+<div class="col-span-12 flex flex-col md:flex-row gap-12 group border-t border-white/5 pt-16">
+<div class="w-full md:w-1/3 aspect-video overflow-hidden rounded border border-white/5">
+<img alt="Archive 2023" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Pottery workshop with rows of clay bowls on wooden shelves, earthy tones and dusty atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpxMrOw28bo6RbbmyTZa9lqKavtF9aysmvUMBJe7jKZa4ZEsY5XRzaJqdhRCO-v0niO0CB_wZlL83OlMRZTUc8aG4RDUel8R1HHnyzaRBVoFYD_dLwVhxPcAnxyA7ra-S08IN1UcJ7XObgtvcRO9AVwYcfV5QQbairNfe904Y4nq0ZHP78Gz2X9fZIjthNQNPKDoZ27U4zMFgPYf_MocoFFf6mZ7Qn6eVJ74RMLMWPBns_6sDSeEdOffhkfxi5F6h9KQEWITk_qgs"/>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<span class="font-label-caps text-secondary mb-2">Spring 2024</span>
+<h4 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">Earth Bound</h4>
+<p class="font-body-md text-secondary max-w-xl">Celebrating the heritage of regional pottery collectives from the high desert plateau.</p>
+</div>
+<div class="flex items-center">
+<a class="font-label-caps text-white/40 hover:text-primary flex items-center gap-2 group/link" href="#">
+                            View Catalog 
+                            <span class="material-symbols-outlined text-[16px] group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- More Archive Button -->
+<div class="flex justify-center mt-20">
+<button class="font-label-caps text-secondary hover:text-primary transition-colors duration-300 flex items-center gap-4">
+                    Explore Extended Archive (2018—2023)
+                    <span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 grid grid-cols-12 gap-8 max-w-[1440px] mx-auto bg-black border-t border-white/5">
+<div class="col-span-12 lg:col-span-4">
+<div class="text-xl font-serif text-amber-500 mb-4 font-headline-md uppercase tracking-widest">The Silent Curator</div>
+<p class="font-serif text-sm tracking-widest text-white/40 max-w-xs">A platform dedicated to the quiet beauty of artisanal craftsmanship and the hands that create it.</p>
+</div>
+<div class="col-span-6 lg:col-span-2 flex flex-col gap-4">
+<h5 class="font-label-caps text-amber-500 mb-2">Navigation</h5>
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="collection.html">Collection</a>
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="journal.html">Journal</a>
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="artist.html">Artists</a>
+<a class="font-serif text-sm tracking-widest text-amber-500 transition-all duration-300" href="exhibitions.html">Exhibitions</a>
+</div>
+<div class="col-span-6 lg:col-span-2 flex flex-col gap-4">
+<h5 class="font-label-caps text-amber-500 mb-2">Inquiry</h5>
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Newsletter</a>
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Inquiry</a>
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Privacy</a>
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Terms</a>
+</div>
+<div class="col-span-12 lg:col-span-4 flex flex-col justify-between items-end">
+<div class="w-full">
+<h5 class="font-label-caps text-amber-500 mb-6">Join the Registry</h5>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-white/20 pb-4 text-white font-label-caps focus:ring-0 focus:border-amber-500 transition-colors" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="absolute right-0 bottom-4 text-amber-500">
+<span class="material-symbols-outlined" data-icon="arrow_right_alt">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<p class="font-serif text-sm tracking-widest text-white/40 mt-12 lg:mt-0">
+                © 2024 The Silent Curator. All Rights Reserved.
+            </p>
+</div>
+</footer>
+</body></html>

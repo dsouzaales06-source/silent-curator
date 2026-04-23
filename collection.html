@@ -1,0 +1,340 @@
+<html><head><meta charset="utf-8"/>
+<title>The Silent Curator - Collection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary": "#303221",
+                "surface-variant": "#343535",
+                "secondary-container": "#494a38",
+                "surface-container-high": "#292a2a",
+                "on-tertiary": "#082b72",
+                "on-primary-fixed-variant": "#574500",
+                "on-primary-fixed": "#241a00",
+                "surface-tint": "#e9c349",
+                "primary": "#f2ca50",
+                "tertiary-container": "#97b0ff",
+                "on-secondary-container": "#b9baa3",
+                "surface-container": "#1f2020",
+                "error-container": "#93000a",
+                "outline-variant": "#4d4635",
+                "primary-fixed": "#ffe088",
+                "secondary": "#c8c8b0",
+                "error": "#ffb4ab",
+                "on-surface": "#e3e2e2",
+                "on-tertiary-fixed-variant": "#27438a",
+                "on-error-container": "#ffdad6",
+                "on-surface-variant": "#d0c5af",
+                "surface": "#121414",
+                "inverse-on-surface": "#2f3031",
+                "secondary-fixed": "#e4e4cc",
+                "on-error": "#690005",
+                "inverse-primary": "#735c00",
+                "background": "#121414",
+                "tertiary-fixed-dim": "#b4c5ff",
+                "tertiary-fixed": "#dbe1ff",
+                "surface-dim": "#121414",
+                "on-primary": "#3c2f00",
+                "surface-container-highest": "#343535",
+                "surface-container-low": "#1b1c1c",
+                "primary-container": "#d4af37",
+                "on-background": "#e3e2e2",
+                "on-tertiary-container": "#254188",
+                "on-primary-container": "#554300",
+                "tertiary": "#bfcdff",
+                "primary-fixed-dim": "#e9c349",
+                "secondary-fixed-dim": "#c8c8b0",
+                "surface-bright": "#383939",
+                "on-tertiary-fixed": "#00174b",
+                "on-secondary-fixed-variant": "#474836",
+                "inverse-surface": "#e3e2e2",
+                "outline": "#99907c",
+                "surface-container-lowest": "#0d0e0f",
+                "on-secondary-fixed": "#1b1d0e"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "unit": "8px",
+                "container-max": "1440px",
+                "gutter": "32px",
+                "element-gap": "24px",
+                "section-padding": "120px"
+        },
+        "fontFamily": {
+                "headline-md": ["Noto Serif"],
+                "body-lg": ["Manrope"],
+                "body-md": ["Manrope"],
+                "headline-lg": ["Noto Serif"],
+                "label-caps": ["Manrope"],
+                "display-xl": ["Noto Serif"]
+        },
+        "fontSize": {
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "300"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.2em", "fontWeight": "600"}],
+                "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+        }
+      },
+    },
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+  }
+  .halo-hover:hover {
+    box-shadow: 0 0 60px rgba(212, 175, 55, 0.15);
+    background: rgba(212, 175, 55, 0.05);
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 2px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d4af37;
+  }
+</style>
+</head><body class="dark bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar Section -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto bg-black/40 backdrop-blur-2xl border-b border-white/10">
+<div class="text-2xl font-serif uppercase tracking-[0.2em] text-amber-500">
+      The Silent Curator
+    </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-serif tracking-wide text-amber-500 border-b border-amber-500 pb-1" href="collection.html">Collection</a>
+<a class="font-serif tracking-wide text-white/60 hover:text-white transition-colors duration-500" href="journal.html">Journal</a>
+<a class="font-serif tracking-wide text-white/60 hover:text-white transition-colors duration-500" href="artist.html">Artists</a>
+<a class="font-serif tracking-wide text-white/60 hover:text-white transition-colors duration-500" href="exhibitions.html">Exhibitions</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-white/60 hover:text-amber-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="md:hidden text-white/60">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-[160px] min-h-screen">
+<!-- Hero Header -->
+<header class="px-12 mb-20">
+<div class="max-w-[1440px] mx-auto">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-4 block">The Full Archive</span>
+<h1 class="font-display-xl text-display-xl mb-6">Objects of Intent</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          A curated assembly of artisanal works where every stroke, fire, and weave tells a silent story of tradition and contemporary vision.
+        </p>
+</div>
+</header>
+<!-- Filter Bar -->
+<section class="sticky top-[88px] z-40 bg-background/80 backdrop-blur-md border-y border-white/5 px-12 py-6 mb-16">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="flex flex-wrap gap-12">
+<div class="group cursor-pointer">
+<span class="font-label-caps text-label-caps text-on-surface-variant group-hover:text-primary transition-colors block mb-2">MATERIAL</span>
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md">All Textures</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+</div>
+<div class="group cursor-pointer">
+<span class="font-label-caps text-label-caps text-on-surface-variant group-hover:text-primary transition-colors block mb-2">ARTIST</span>
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md">All Creators</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+</div>
+<div class="group cursor-pointer">
+<span class="font-label-caps text-label-caps text-on-surface-variant group-hover:text-primary transition-colors block mb-2">COLLECTION</span>
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md">Current Season</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 border-b border-white/20 pb-2 w-full md:w-auto">
+<span class="material-symbols-outlined text-surface-variant" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 font-body-md text-white placeholder-white/20 w-full md:w-64" placeholder="Find a specific work..." type="text"/>
+</div>
+</div>
+</section>
+<!-- Collection Grid -->
+<section class="px-12 mb-32">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
+<!-- Card 1 -->
+<article class="group">
+<div class="relative aspect-[3/4] overflow-hidden glass-card halo-hover transition-all duration-700">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100" data-alt="Minimalist matte black ceramic vase with organic asymmetrical silhouette against a soft charcoal background with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG3B6bG3c5qx3aynokRQstSSXZmCpfDTEE2BmpuWGf47Ek-gnb_mFys_459qd4js9rbtZdq9AkIQqe959L52raUNrQ0cd9Os3w2j7b4t9zQgdXvs9717s5OxJ1wWkOK6N_rxUIrkKJ59BFG5b2XcO9G2yQHnD57FCoaBOCJTooSncZtidpEFSqlr06XdGKzW_Sc_Mke7ifuVG5aXKCrBCpIRtdzoszUUtYsxxlYJTX5_E2Px3Y_Bp8K_OVjexDHqN_wh1HxSEcKV8"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<button class="px-8 py-3 border border-primary text-primary font-label-caps text-label-caps bg-black/40 backdrop-blur-md hover:bg-primary hover:text-black transition-all" onclick="window.location.href='product.html'">VIEW PIECE</button>
+</div>
+</div>
+<div class="mt-8">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-white cursor-pointer hover:text-primary transition-colors" onclick="window.location.href='product.html'">Ecliptic Vessel I</h3>
+<span class="font-body-md text-primary">$1,250</span>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant">ELARA VANCE • HAND-THROWN CERAMIC</p>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group lg:mt-24">
+<div class="relative aspect-[3/4] overflow-hidden glass-card halo-hover transition-all duration-700">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100" data-alt="Hand-woven textile wall hanging featuring raw linen and golden silk threads in a geometric abstract pattern, soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_pBT-VR6IWs1WhtAe8dct4lhkYfZfycXw5qh611owJ8FmbmgzcwlZtneD2gtooCU6q7P80IDQO6YWw_TZ4uPTo3Zub5KfMecCB7d2mOVkWhgRfXBWmJGnwsTR6v11bolWLueOIrzl6c9ICigGoZXWhr1SlRY7MrGL4QQ_IzfF7MwxEbvD9__cDlhrqO9XhpQg2XhVpD3EaEmbJX4HGdjCy3NnikMKBlWYEc707fMz4FkoRxZFnDXzbTX-j2n2qgZ1goCj8Q3WK0w"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<button class="px-8 py-3 border border-primary text-primary font-label-caps text-label-caps bg-black/40 backdrop-blur-md hover:bg-primary hover:text-black transition-all" onclick="window.location.href='product.html'">VIEW PIECE</button>
+</div>
+</div>
+<div class="mt-8">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-white cursor-pointer hover:text-primary transition-colors" onclick="window.location.href='product.html'">Woven Silence</h3>
+<span class="font-body-md text-primary">$3,800</span>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant">JULIAN MARX • FIBER ART</p>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group">
+<div class="relative aspect-[3/4] overflow-hidden glass-card halo-hover transition-all duration-700">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100" data-alt="Set of three hand-carved dark walnut bowls with unique grain patterns resting on a rough stone surface in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIFsQfWA5cpZJ4RLTIAfNLjH5XHQgsiKFR3i68gwbwrz3LkKW2_x7pg_slu8q0oRIjPPGhZV3xIVhOzl7cGKVpJDwdPn1FMDZ2g9vzJFTfqndfzEcLSGV1FnFfZQMxHpvskzZcPEFLw0j6fHED2IB4E0ee2uuvEhE5opcF-pTL8QjOT6wJYOE7b4_Tej0BgbRP08rF8WS-HMwkJUEDur-WR1olXAh_O7mo-LzLcQwt-9WtiA6WiW0ged7U-6aWEjaQBdmd1Xi7yV4"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<button class="px-8 py-3 border border-primary text-primary font-label-caps text-label-caps bg-black/40 backdrop-blur-md hover:bg-primary hover:text-black transition-all" onclick="window.location.href='product.html'">VIEW PIECE</button>
+</div>
+</div>
+<div class="mt-8">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-white cursor-pointer hover:text-primary transition-colors" onclick="window.location.href='product.html'">Timber Suite</h3>
+<span class="font-body-md text-primary">$950</span>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant">SANA KIM • SCULPTED WOOD</p>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group">
+<div class="relative aspect-[3/4] overflow-hidden glass-card halo-hover transition-all duration-700">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100" data-alt="Delicate hand-blown glass sculpture with ethereal swirl of amber and smoke colors trapped inside clear glass sphere, warm spotlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuiltpEfOuYsZrUBR6J3kJXDPEsSSJMjcyPjyU6NWOSk-luFBYalMXdKv0Zud_AtRXKu2PdbGHWzE3Vpostwtp0Uq9fc7Zayc7knYCUin7g0RXSNdatit7n5synVftbZItQOuo2NzK4W4SQoxCSPij5BMh-KKfjVb0qgnlfruV9Dgzv2mC6ekfRgWR3nhFxBbZNKZOYPwQf-pB3yhc9hXRCXMSK5wX6QnnvVI0nFMo0iIu1jPTK5XEzL1i9KKwSqda6uUJymUBo-s"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<button class="px-8 py-3 border border-primary text-primary font-label-caps text-label-caps bg-black/40 backdrop-blur-md hover:bg-primary hover:text-black transition-all" onclick="window.location.href='product.html'">VIEW PIECE</button>
+</div>
+</div>
+<div class="mt-8">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-white cursor-pointer hover:text-primary transition-colors" onclick="window.location.href='product.html'">Orbital Flux</h3>
+<span class="font-body-md text-primary">$2,100</span>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant">MARCUS THORNE • GLASSWORK</p>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="group lg:-mt-24">
+<div class="relative aspect-[3/4] overflow-hidden glass-card halo-hover transition-all duration-700">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100" data-alt="Forged iron candelabra with raw textured surface and elegant curved arms, standing against a rustic plaster wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLhCDpalvXeup7hqXHY_vGKEfxmozc6pYGZdvaahwHgxko4TZUr4Zq_tEV9RDboKXmJiuLrmAnq5irBpcDNfecI1ojIpKprP5D2lmC3UxwnYFLErqrjc5vDtoLJ_gxfI2A9_RGVG5rNDH7n94GEqT2sZZRrKwc3bw1d6VDDFVU_mw3ME6s3TxjylSF4sGfMarNXZmmUe-DM4QykEkTTcNYj-kBhwyf7u8BrKYqyDovqn5FbOopXqvLNJC6MYb2te9wRccQHFrsGpo"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<button class="px-8 py-3 border border-primary text-primary font-label-caps text-label-caps bg-black/40 backdrop-blur-md hover:bg-primary hover:text-black transition-all" onclick="window.location.href='product.html'">VIEW PIECE</button>
+</div>
+</div>
+<div class="mt-8">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-white cursor-pointer hover:text-primary transition-colors" onclick="window.location.href='product.html'">Anvil &amp; Ember</h3>
+<span class="font-body-md text-primary">$1,450</span>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant">DANTE RHEE • BLACKSMITHING</p>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="group">
+<div class="relative aspect-[3/4] overflow-hidden glass-card halo-hover transition-all duration-700">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100" data-alt="Hand-painted contemporary ceramic platter with delicate brushwork in indigo and gold, minimalist Japanese-inspired aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlRnd2WIM_Ey-D3D2LXxzSuJxSkItKXDRAd8xcQxOJl-DnI7d5B52Dtv-yGCCrbo_3FeYhB2KSVc0GUuJeQFkv78O-4yq5lNMkeCkJB75M9d57b9-NV7MWPlIL2hfnYK3375t6CGmgA1KTOPz8FwldiWbsh5xM8qJ4WCDEUo_k-WavI8YpunUV-9K5eCoL3dUgL2q3o7HmytWoacy1R8FmxsFxxo1HKy_aviazyDG0vW6M79VbLpNVc4Lr6VXbz9ZKEZUijm60OcQ"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<button class="px-8 py-3 border border-primary text-primary font-label-caps text-label-caps bg-black/40 backdrop-blur-md hover:bg-primary hover:text-black transition-all" onclick="window.location.href='product.html'">VIEW PIECE</button>
+</div>
+</div>
+<div class="mt-8">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-white cursor-pointer hover:text-primary transition-colors" onclick="window.location.href='product.html'">Kintsugi Study</h3>
+<span class="font-body-md text-primary">$875</span>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant">YUKI TANAKA • FINE CERAMIC</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Pagination -->
+<div class="flex justify-center items-center gap-8 mb-32">
+<button class="w-12 h-12 flex items-center justify-center border border-white/10 hover:border-primary transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<div class="flex items-center gap-6">
+<span class="font-label-caps text-label-caps text-primary border-b border-primary">01</span>
+<span class="font-label-caps text-label-caps text-white/40 hover:text-white cursor-pointer transition-colors">02</span>
+<span class="font-label-caps text-label-caps text-white/40 hover:text-white cursor-pointer transition-colors">03</span>
+<span class="font-label-caps text-label-caps text-white/40">...</span>
+<span class="font-label-caps text-label-caps text-white/40 hover:text-white cursor-pointer transition-colors">12</span>
+</div>
+<button class="w-12 h-12 flex items-center justify-center border border-white/10 hover:border-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Footer Section -->
+<footer class="w-full py-20 px-12 grid grid-cols-12 gap-8 max-w-[1440px] mx-auto bg-black border-t border-white/5">
+<div class="col-span-12 md:col-span-4">
+<div class="text-xl font-serif text-amber-500 mb-4">The Silent Curator</div>
+<p class="font-serif text-sm tracking-widest text-white/40 max-w-xs">
+        Elevating the artisan, honoring the craft. A gallery dedicated to the permanence of hand-made excellence.
+      </p>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-primary mb-6">EXPLORE</h4>
+<ul class="space-y-4">
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="collection.html">Collection</a></li>
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="journal.html">Journal</a></li>
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="artist.html">Artists</a></li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h4 class="font-label-caps text-label-caps text-primary mb-6">CONNECT</h4>
+<ul class="space-y-4">
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Inquiry</a></li>
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Newsletter</a></li>
+<li><a class="font-serif text-sm tracking-widest text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Press</a></li>
+</ul>
+</div>
+<div class="col-span-12 md:col-span-4">
+<h4 class="font-label-caps text-label-caps text-primary mb-6">NEWSLETTER</h4>
+<div class="relative border-b border-white/20 pb-2 flex items-center">
+<input class="bg-transparent border-none focus:ring-0 w-full text-white placeholder-white/20 font-serif text-sm" placeholder="Your email address" type="email"/>
+<button class="text-primary hover:translate-x-2 transition-transform">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="col-span-12 mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-serif text-sm tracking-widest text-white/40">© 2024 The Silent Curator. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-serif text-sm tracking-widest text-white/40 hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

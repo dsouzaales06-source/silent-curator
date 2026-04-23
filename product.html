@@ -1,0 +1,277 @@
+<html><head><meta charset="utf-8"/>
+<title>The Silent Curator - Product Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@200;300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary": "#303221",
+                "surface-variant": "#343535",
+                "secondary-container": "#494a38",
+                "surface-container-high": "#292a2a",
+                "on-tertiary": "#082b72",
+                "on-primary-fixed-variant": "#574500",
+                "on-primary-fixed": "#241a00",
+                "surface-tint": "#e9c349",
+                "primary": "#f2ca50",
+                "tertiary-container": "#97b0ff",
+                "on-secondary-container": "#b9baa3",
+                "surface-container": "#1f2020",
+                "error-container": "#93000a",
+                "outline-variant": "#4d4635",
+                "primary-fixed": "#ffe088",
+                "secondary": "#c8c8b0",
+                "error": "#ffb4ab",
+                "on-surface": "#e3e2e2",
+                "on-tertiary-fixed-variant": "#27438a",
+                "on-error-container": "#ffdad6",
+                "on-surface-variant": "#d0c5af",
+                "surface": "#121414",
+                "inverse-on-surface": "#2f3031",
+                "secondary-fixed": "#e4e4cc",
+                "on-error": "#690005",
+                "inverse-primary": "#735c00",
+                "background": "#121414",
+                "tertiary-fixed-dim": "#b4c5ff",
+                "tertiary-fixed": "#dbe1ff",
+                "surface-dim": "#121414",
+                "on-primary": "#3c2f00",
+                "surface-container-highest": "#343535",
+                "surface-container-low": "#1b1c1c",
+                "primary-container": "#d4af37",
+                "on-background": "#e3e2e2",
+                "on-tertiary-container": "#254188",
+                "on-primary-container": "#554300",
+                "tertiary": "#bfcdff",
+                "primary-fixed-dim": "#e9c349",
+                "secondary-fixed-dim": "#c8c8b0",
+                "surface-bright": "#383939",
+                "on-tertiary-fixed": "#00174b",
+                "on-secondary-fixed-variant": "#474836",
+                "inverse-surface": "#e3e2e2",
+                "outline": "#99907c",
+                "surface-container-lowest": "#0d0e0f",
+                "on-secondary-fixed": "#1b1d0e"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "unit": "8px",
+                "container-max": "1440px",
+                "gutter": "32px",
+                "element-gap": "24px",
+                "section-padding": "120px"
+        },
+        "fontFamily": {
+                "headline-md": ["Noto Serif"],
+                "body-lg": ["Manrope"],
+                "body-md": ["Manrope"],
+                "headline-lg": ["Noto Serif"],
+                "label-caps": ["Manrope"],
+                "display-xl": ["Noto Serif"]
+        },
+        "fontSize": {
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "300"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.2em", "fontWeight": "600"}],
+                "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+  .glass-panel {
+    background: rgba(18, 20, 20, 0.4);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+  }
+  .halo-glow:hover {
+    box-shadow: 0 0 60px rgba(212, 175, 55, 0.1);
+  }
+  body {
+    background-color: #121414;
+    color: #e3e2e2;
+  }
+</style>
+</head><body class="dark font-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- Shared TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto bg-black/40 backdrop-blur-2xl border-b border-white/10 font-serif tracking-wide">
+<div class="text-2xl font-serif uppercase tracking-[0.2em] text-amber-500">
+      The Silent Curator
+    </div>
+<nav class="hidden md:flex gap-12">
+<a class="text-amber-500 border-b border-amber-500 pb-1 font-label-caps" href="collection.html">Collection</a>
+<a class="text-white/60 hover:text-white transition-colors duration-500 font-label-caps" href="journal.html">Journal</a>
+<a class="text-white/60 hover:text-white transition-colors duration-500 font-label-caps" href="artist.html">Artists</a>
+<a class="text-white/60 hover:text-white transition-colors duration-500 font-label-caps" href="exhibitions.html">Exhibitions</a>
+</nav>
+<div class="flex items-center gap-6 text-white/60">
+<button class="hover:text-amber-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</header>
+<main class="pt-[120px] max-w-[1440px] mx-auto px-12">
+<!-- Hero Product Section -->
+<section class="grid grid-cols-12 gap-8 mb-section-padding">
+<!-- Main Visual -->
+<div class="col-span-12 lg:col-span-7 aspect-[4/5] relative overflow-hidden bg-surface-container-low group">
+<img class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105" data-alt="Close-up of a minimalist black ceramic vessel with organic texture and a subtle golden interior glaze, set against a dark moody background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFYaVgwrKyY0daCZuxIa52vtIi8Z5XBBDcZtQe9X8pYBv6aqLjrPdrsl26iNbfbT8Ax4bqGumH5DzbJZXwTJCgPg1AfEDdiTMB0nY3r2cctnVaQXeFsgo2Zu-qjsouXT51wVegHftecHUMocO1vdX0GPJNE-p19TDY7g2ujEvlEwhsLyT9mC6so15U-dLhi10bpTIXQyIeMEJh3DiQE5ZQyYtBz_1wIKFAKcNrjo3_zkY0U5rqjbKwrhccqFK2ZJrDY2vRRvkVxUo"/>
+<div class="absolute bottom-8 left-8 flex gap-4">
+<span class="px-4 py-2 border border-white/20 bg-black/40 backdrop-blur-md font-label-caps text-[10px]">EDITION 04 / 12</span>
+<span class="px-4 py-2 border border-white/20 bg-black/40 backdrop-blur-md font-label-caps text-[10px]">HAND-THROWN</span>
+</div>
+</div>
+<!-- Content Column -->
+<div class="col-span-12 lg:col-span-5 flex flex-col justify-center py-8">
+<div class="mb-12">
+<p class="font-label-caps text-amber-500 mb-4">THE VOID SERIES</p>
+<h1 class="font-headline-lg text-on-surface mb-6">The Void Series No. 04</h1>
+<p class="font-body-lg text-on-surface-variant max-w-md">
+            An exploration of negative space and the transient nature of shadow. This piece is hand-carved from volcanic clay and finished with a unique metallic reduction glaze.
+          </p>
+</div>
+<!-- Details Grid -->
+<div class="grid grid-cols-2 gap-8 mb-12 border-t border-white/10 pt-8">
+<div>
+<p class="font-label-caps text-white/40 mb-2">DIMENSIONS</p>
+<p class="font-body-md">24cm x 24cm x 32cm</p>
+</div>
+<div>
+<p class="font-label-caps text-white/40 mb-2">MATERIAL</p>
+<p class="font-body-md">Volcanic Clay, Gold Leaf</p>
+</div>
+<div>
+<p class="font-label-caps text-white/40 mb-2">ORIGIN</p>
+<p class="font-body-md">Kyoto Studio</p>
+</div>
+<div>
+<p class="font-label-caps text-white/40 mb-2">WEIGHT</p>
+<p class="font-body-md">4.2 kg</p>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-4">
+<button class="w-full py-5 border border-amber-500 text-amber-500 font-label-caps hover:bg-amber-500/5 hover:shadow-[0_0_40px_rgba(212,175,55,0.1)] transition-all duration-500">
+            ADD TO CART — $2,400
+          </button>
+<button class="w-full py-5 text-on-surface-variant font-label-caps hover:text-white transition-colors">
+            INQUIRE ABOUT THIS PIECE
+          </button>
+</div>
+</div>
+</section>
+<!-- Narrative Section: Craftsmanship -->
+<section class="grid grid-cols-12 gap-8 mb-section-padding">
+<div class="col-span-12 lg:col-span-4 flex flex-col justify-center order-2 lg:order-1">
+<h2 class="font-headline-md text-on-surface mb-8">The Alchemist's Touch</h2>
+<div class="space-y-6 text-on-surface-variant font-body-md">
+<p>
+            Each piece in The Void Series is born from twenty-four hours of continuous kiln firing. The artist, Elias Thorne, monitors the reduction atmosphere to ensure the metallic luster develops its characteristic depth.
+          </p>
+<p>
+            The interior is gilded with 24k gold leaf, creating a "halo" effect when light strikes the inner rim, symbolizing the spark of life within the silence of the form.
+          </p>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-8 grid grid-cols-2 gap-4 order-1 lg:order-2">
+<div class="aspect-square bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up of artisan hands meticulously applying gold leaf to the inner curve of a dark textured ceramic bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2yA7jgpc8FcxfiOjxOkYNTuySl1AwbR9uJN8kCrDS9e0D-OGU1njEuB0CNnCTG1aLA79qQ4zk3AUdWJCV-UH2draF5DlUvJ40h8IXmKxyMRy-iqoe9sWSzcn0pPUmohEGsl3S94kMp7wlDtAMLzvMiX9tLYS2jsR-EwvbVDQG-AAcoArVQB7No-Gld1vGkVaoSQXn8-ZDIDLVnU8kd7uiIgpfv5swSC9jjvnxbNE4k_AnAssgYvn-81g_moHOUtR9vPS_X2-6bOI"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden mt-12">
+<img class="w-full h-full object-cover" data-alt="Macro photography showing the crystalline structure of the volcanic clay reduction glaze on a black ceramic surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGqQWSZYgR3gxjG8JvyGznmZ0zAmFKhWS3x1UvIr3iOTu9y3LZhf_HjvRIsuiSJ-AdYiR4TllZ689QYAr3gqg4Qu6FpjvHGeRyAJHItfGt5i8D4wIENCBAfyqyWOrkOYuOmy8ihq8RxwOkShLsBjU9MnCcb8UJK1vVSWu9bqGxe0kY3YU9gH1kwNv9dXM8yi8JL3XzGV3EGNZW8QaVlI_IzPamPIeAu0-IBPfE4DAGVMVqJ0zKqgc1UepyhAtkakNphtFHFMqg9KQ"/>
+</div>
+</div>
+</section>
+<!-- Related Collection: Bento Grid Style -->
+<section class="mb-section-padding">
+<div class="flex justify-between items-end mb-12">
+<h3 class="font-headline-md text-on-surface">Complementary Works</h3>
+<a class="font-label-caps text-amber-500 hover:tracking-widest transition-all" href="collection.html">VIEW COLLECTION</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-panel border border-white/10 p-8 halo-glow transition-all duration-700 group">
+<div class="aspect-[3/4] mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Sleek tall obsidian vase standing in a shaft of morning light on a raw concrete pedestal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuUNFv4qrcmHnqxK3np-2zQRvkjEFd9EF3clrdNG_CysQcCe9iuw_h_Uh96U1LaCGwRm8yNxM5xAN9Awm9cHbRX9j5ZCu_V-7Z4GkgF-p1zrificP6dZhxr4lS-FfloTbfqUXJKrg-qiNWrYeHigKL-7Tnz03ITCteKErCwpqN1zopQsVZo3r4MoR2p3m8_m_PCk6zsr7EPBrd8RdckdVybHly4xitRqrdi66B_jozrzHb8VYEE1ALanJ-zD6QQx3eKv376Rh5Txw"/>
+</div>
+<p class="font-label-caps text-white/40 mb-2">NO. 02</p>
+<h4 class="font-headline-md text-on-surface mb-4">The Obelisk</h4>
+<p class="font-body-md text-on-surface-variant">$1,800</p>
+</div>
+<!-- Card 2 (Large Middle) -->
+<div class="glass-panel border border-white/10 p-8 halo-glow transition-all duration-700 group md:translate-y-8">
+<div class="aspect-[3/4] mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Large shallow ceramic platter with concentric ripple patterns and a matte coal finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdrv9KTR1WNMJhosfNIhE2e5A_B9V4AjnHydUGrHzHoTgET22swCxfRoI_ve-9BWWEDieEs87NqpFx767sVjF6v4FNlmMeW2xWM_tRYy7o1T6ji6RH7LqnI4j4aourWkozm5HGh-kUgl83kz-T8WGgcv4UllwQ5sjga0U7NUCgMVq6OUZKdj7OrJcNC9DxhgGGQ8-lEhpF6ZULmeLM8eLo_lvg6nBM63sXU8rRIdZx6L5YtaMvbYUB3KcyQ7L3zW5LUWAI7DlFVJE"/>
+</div>
+<p class="font-label-caps text-white/40 mb-2">NO. 07</p>
+<h4 class="font-headline-md text-on-surface mb-4">The Ripple Plate</h4>
+<p class="font-body-md text-on-surface-variant">$3,200</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel border border-white/10 p-8 halo-glow transition-all duration-700 group">
+<div class="aspect-[3/4] mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Small asymmetrical ceramic sculptures arranged as a triptych on a dark wooden surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkPXgorQZxXCa0REY_y_DywizWWOYXjp5Q3omk3vy2mjQ26h6XwgH_kcVyj7LPRKdrmYeeg3IHGYIvDLQdj8ON2U81NPy5pzj79gOlo-99FiwYDLyqcmPQDFBeHvDF6dRf4oEQWY0Pt1Gaw9pGyshWKsYM5DuV8EnJynXVHQNA5jpKzeRDdCexgsI0aULAlivom4gbiSYXrdDjnbktjJAX5DWkuPwGakjoVXGTv2lYoTQJXti3gFMIHtYtDMTAmrorhttN78O3ycE"/>
+</div>
+<p class="font-label-caps text-white/40 mb-2">SET 01</p>
+<h4 class="font-headline-md text-on-surface mb-4">Echo Triptych</h4>
+<p class="font-body-md text-on-surface-variant">$1,200</p>
+</div>
+</div>
+</section>
+<!-- Newsletter Inquiry -->
+<section class="max-w-2xl mx-auto text-center py-section-padding">
+<h2 class="font-headline-lg mb-8">Acquire Rarity</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">
+            Join our private circle to receive invitations to new collection previews and artist studio visits before public release.
+        </p>
+<form class="relative group">
+<input class="w-full bg-transparent border-b border-white/20 py-4 font-label-caps outline-none focus:border-amber-500 transition-colors placeholder:text-white/20" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="absolute right-0 bottom-4 font-label-caps text-amber-500 hover:tracking-widest transition-all">SUBSCRIBE</button>
+</form>
+</section>
+</main>
+<!-- Shared Footer -->
+<footer class="w-full py-20 px-12 grid grid-cols-12 gap-8 max-w-[1440px] mx-auto bg-black border-t border-white/5 font-serif text-sm tracking-widest">
+<div class="col-span-12 md:col-span-4">
+<div class="text-xl font-serif text-amber-500 mb-4">The Silent Curator</div>
+<p class="text-white/40 font-body-md normal-case leading-relaxed max-w-xs">
+        Curating the world's most evocative artisanal crafts, where every piece tells a story of patience and perfection.
+      </p>
+</div>
+<div class="col-span-6 md:col-span-2">
+<p class="text-amber-500 mb-6 font-label-caps">NAVIGATE</p>
+<ul class="space-y-4">
+<li><a class="text-white/40 hover:text-amber-500 transition-all duration-300" href="collection.html">Collection</a></li>
+<li><a class="text-white/40 hover:text-amber-500 transition-all duration-300" href="journal.html">Journal</a></li>
+<li><a class="text-white/40 hover:text-amber-500 transition-all duration-300" href="artist.html">Artists</a></li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-2">
+<p class="text-amber-500 mb-6 font-label-caps">CONNECT</p>
+<ul class="space-y-4">
+<li><a class="text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Newsletter</a></li>
+<li><a class="text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Inquiry</a></li>
+<li><a class="text-white/40 hover:text-amber-500 transition-all duration-300" href="#">Instagram</a></li>
+</ul>
+</div>
+<div class="col-span-12 md:col-span-4 text-right flex flex-col justify-end">
+<p class="text-white/40">© 2024 The Silent Curator. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>
